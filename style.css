@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Grid container innehåll*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 0fr 0fr 0fr;
+  grid-template-rows: auto 0fr 0fr 0fr;
+
+  grid-template-areas:
+    "header header header header"
+  }
+
+  /*Rubrik*/
+
+  .header { grid-area: header; }
+  .header{
+      height: 100vh;
+      width: 100%;
+      background-image: url('bilder/bg.jpg');
+      background-position:center;
+      background-size: cover;
+      position: relative;
+    
+  }
+  .header>h1:first-of-type{
+    font-size: 600%;
+    text-align: center;
+    color: white;
+    font-family: 'Train One', cursive;
+    margin-top: 5%;
+    margin-right: 39%;
+  }
+  .header>h1:nth-child(3){
+    font-size: 600%;
+    text-align: center;
+    color: white;
+    font-family: 'Train One', cursive;
+    margin-top: 5%;
+    margin-left: 23%;
+  }
+  .header>p{
+    font-size: 40px;
+    margin-left:45rem ;
+    margin-top:5rem ;
+    justify-self: center;
+    align-self: center;
+
+  }
+  .header>p>a{
+    /* boll */
+    display: flex;
+    text-decoration:none;
+    transition: 0.3s;
+    display: block;
+    width: 100%;
+    
+  }
+  .header>p>a:hover{
+    transition: 0.3s;
+    transform: scale(1.5) rotate(25deg);
+
+  }
+
+.header>h1{
+  animation-name: färger;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes färger{
+  0%   {color:red; left:200px; top:200px;}
+  25%  {color:yellow; left:200px; top:0px;}
+  50%  {color:orange; left:200px; top:200px;}
+  75%  {color:purple; left:0px; top:200px;}
+  100% {color:black; left:0px; top:0px;}
+}
+
+  /*lista*/
+
+
+  
+  
