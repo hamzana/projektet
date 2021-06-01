@@ -19,7 +19,7 @@
   .header { 
       grid-area: header; 
       width: 100%;
-      background-image: url('bilder/bg.jpg');
+      background-image: url('bilder/bg-index1.jpg');
       background-position:center;
       background-size: cover;
       padding-right:2.5%;
@@ -90,14 +90,12 @@
 @media screen and (max-width: 700px) {
   .header > h1:first-of-type, .header > h1:nth-child(3){
     font-size: 3rem;
-    outline: 5px solid green
   }
 }
 
 @media screen and (max-width: 500px) {
   .header > h1:first-of-type, .header > h1:nth-child(3){
     font-size: 2rem;
-    outline: 5px solid red
   }
 }
 
